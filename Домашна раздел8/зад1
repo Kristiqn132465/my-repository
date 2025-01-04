@@ -1,0 +1,12 @@
+using System.Diagnostics;
+using System.Diagnostics.Metrics;
+Console.WriteLine("length of train =");
+var lenghtOfTrain  = int.Parse(Console.ReadLine());
+Console.WriteLine("Speed =");
+var speed = int.Parse(Console.ReadLine());
+Console.WriteLine("Time =");
+var time = int.Parse(Console.ReadLine());
+
+var totalLenght = speed * time;
+
+Console.WriteLine($"length of bridge = {totalLenght - lenghtOfTrain} meters.");
