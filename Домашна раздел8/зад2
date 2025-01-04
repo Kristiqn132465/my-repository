@@ -1,0 +1,24 @@
+Console.WriteLine("Enter k");
+int k = int.Parse(Console.ReadLine());
+
+
+int yellowApples = 0;
+int redApples  = 0;
+
+for (int size = 1; size <= k; size++)
+{
+    if (size % 2 == 0)
+    {
+        yellowApples += size * size;
+    }
+    else
+    {
+        redApples += size * size;
+    }
+}
+
+int result = yellowApples - redApples;
+
+//Console.WriteLine($"{Math.Abs(result)}");
+
+Console.WriteLine( result );
